@@ -1,0 +1,107 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #009688;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+}
+
+input, button, p {
+    margin-bottom: 10px;
+}
+
+button {
+    background-color: #009688;
+    color: #fff;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #00796b;
+}
+
+#suggestions {
+    max-height: 150px;
+    overflow-y: auto;
+    position: absolute;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: calc(80% - 22px); /* Ajuste para compensar el padding y el borde del input */
+    margin-top: 5px;
+    display: none;
+}
+
+.suggestion {
+    padding: 8px;
+    cursor: pointer;
+    border-bottom: 1px solid #ddd;
+}
+
+.suggestion:last-child {
+    border-bottom: none;
+}
+
+
+/* Agregar estilos para el historial de ejercicios */
+#ejerciciosRealizados {
+    margin-top: 30px;
+}
+
+.historial-item {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+#historialEjercicios {
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+/* Resto de estilos... */
+/* Agregar estilos para el historial de ejercicios */
+#ejerciciosRealizados {
+    margin-top: 30px;
+}
+
+.historial-item {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+    width: calc(33.33% - 20px); /* 33.33% para 3 elementos en una fila, ajustar según necesidades */
+    box-sizing: border-box;
+    float: left;
+    margin-right: 20px;
+}
+
+#historialEjercicios {
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+/* Añadir un clearfix para evitar problemas de float */
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* Resto de estilos... */

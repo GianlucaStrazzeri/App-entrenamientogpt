@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Registro de Entrenamiento</title>
+</head>
+<body>
+    <h1>Registro de Entrenamiento</h1>
+
+    <label for="exercise">Buscar Ejercicio:</label>
+    <input type="text" id="exerciseInput" placeholder="Buscar ejercicio...">
+
+    <div id="suggestions"></div>
+
+    <label for="sets">Sets:</label>
+    <input type="number" id="sets" placeholder="Número de Sets">
+
+    <label for="reps">Reps por Set:</label>
+    <input type="number" id="reps" placeholder="Número de Repeticiones por Set">
+
+    <label for="weight">Peso por Set (en kilogramos):</label>
+    <input type="number" id="weight" placeholder="Peso por Set">
+
+    <button onclick="registrarEntrenamiento()">Registrar Entrenamiento</button>
+
+    <p id="resultado"></p>
+
+    <div id="ejerciciosRealizados">
+        <h2>Ejercicios Realizados</h2>
+        <div id="historialEjercicios"></div>
+    </div>
+    <div id="historialEjercicios" class="clearfix"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
